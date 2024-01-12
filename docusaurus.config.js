@@ -9,7 +9,7 @@ const darkTheme = themes.dracula;
 const config = {
   title: 'FSDT Documentation',
   tagline: 'Full Stack DevTool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://fsdt.maxime-p.dev',
@@ -60,22 +60,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo.svg',
       navbar: {
-        title: 'FSDT',
+        title: 'Fullstack Devtool',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'FSDT Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
             position: 'left',
-            label: 'Tutorial',
+            docId: 'getting-started',
+            label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'api',
+            label: 'API',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'tutorials',
+            label: 'Tutorials',
+          },
+          {
+            href: 'https://github.com/orgs/FullStack-DevTool/repositories',
             label: 'GitHub',
             position: 'right',
           },
