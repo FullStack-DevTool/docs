@@ -69,13 +69,25 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
             position: 'left',
-            label: 'Tutorial',
+            docId: 'getting-started',
+            label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'api',
+            label: 'API',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'tutorials',
+            label: 'Tutorials',
+          },
+          {
+            href: 'https://github.com/orgs/FullStack-DevTool/repositories',
             label: 'GitHub',
             position: 'right',
           },
