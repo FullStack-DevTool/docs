@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[237],{9754:(s,c,e)=>{e.r(c),e.d(c,{default:()=>d});var u=e(6550),t=e(5893);function d(){return(0,t.jsx)(u.l_,{to:"docs"})}}}]);
