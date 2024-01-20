@@ -27,12 +27,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/FullStack-DevTool/docs/edit/main/',
+          editUrl: 'https://github.com/FullStack-DevTool/docs/edit/main/',
           remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
             require('docusaurus-remark-plugin-tab-blocks'),
-          ]
+          ],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,46 +40,45 @@ const config: Config = {
     ],
   ],
 
-  themeConfig:
-    {
-      image: 'img/logo.svg',
-      navbar: {
-        title: 'Fullstack Devtool',
-        logo: {
-          alt: 'FSDT Logo',
-          src: 'img/logo.svg',
+  themeConfig: {
+    image: 'img/logo.svg',
+    navbar: {
+      title: 'Fullstack Devtool',
+      logo: {
+        alt: 'FSDT Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'getting-started',
+          label: 'Docs',
         },
-        items: [
-          {
-            type: 'doc',
-            position: 'left',
-            docId: 'getting-started',
-            label: 'Docs',
-          },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'api',
-            label: 'API',
-          },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'tutorials',
-            label: 'Tutorials',
-          },
-          {
-            href: 'https://github.com/orgs/FullStack-DevTool/repositories',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    } satisfies Preset.ThemeConfig,
-};
+        {
+          type: 'docSidebar',
+          position: 'left',
+          sidebarId: 'api',
+          label: 'API',
+        },
+        {
+          type: 'docSidebar',
+          position: 'left',
+          sidebarId: 'tutorials',
+          label: 'Tutorials',
+        },
+        {
+          href: 'https://github.com/orgs/FullStack-DevTool/repositories',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
+}
 
 export default config

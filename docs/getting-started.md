@@ -4,13 +4,14 @@ slug: /
 
 # Getting Started
 
-
 ## Installation
 
 Install FSDT using your favorite package manager:
+
 ```bash npm2yarn
 npm install @fullstack-devtool/sdk
 ```
+
 ```bash npm2yarn
 npm install --save-dev @fullstack-devtool/app
 ```

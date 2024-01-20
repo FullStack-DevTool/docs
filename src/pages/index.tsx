@@ -1,5 +1,5 @@
-import  { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom'
 
 export default function Home() {
-  return <Redirect to='docs' />;
+  return <Redirect to="docs" />
 }
